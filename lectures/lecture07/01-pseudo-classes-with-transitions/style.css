@@ -40,6 +40,7 @@ div {
    text-decoration: none;
    padding: 5px 10px;
    display: inline-block;
+   transition: all 0.3s ease-out;
 }
 
 #demo1 a:hover,

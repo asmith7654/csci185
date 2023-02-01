@@ -1,1 +1,10 @@
 /* Your style rules here */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Raleway:wght@200&display=swap');
+h1,h2
+{
+    font-family: 'Raleway', sans-serif;
+}
+body
+{
+    font-family: 'Crimson Text', serif;
+}

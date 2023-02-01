@@ -3,5 +3,12 @@
 
 
 .fa-solid {
-    font-size: 50px;
+    font-size: 35px;
+}
+.fa-mug-saucer {
+    font-size: 60px;
+    color: blue;
+}
+.fa-heart {
+    color: red;
 }
