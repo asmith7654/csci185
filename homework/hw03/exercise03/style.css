@@ -2,6 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 body * {
     box-sizing: border-box;
 }
@@ -12,3 +13,13 @@ body {
 }
 
 /* create additional rules below:  */
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Rock+Salt&display=swap');
+
+h1 {
+    font-family: 'Rock Salt', cursive;
+}
+h2 {
+    font-family: 'Major Mono Display', monospace;
+  
+
+}
