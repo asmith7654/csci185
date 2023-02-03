@@ -1,6 +1,10 @@
 /* You're welcome to change any of this! */
 * {
     box-sizing: border-box;
+   
+}
+h1 {
+    text-align: center;
 }
 
 body {
