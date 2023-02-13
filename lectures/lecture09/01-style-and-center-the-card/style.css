@@ -15,6 +15,10 @@ justify-content and align-items properties to center the card.
 */
 main {
     min-height: 100vh;
+    display: flex;
+    background-color: rgb(233, 243, 243);
+    justify-content: center;
+    align-items: center;
 }
 
 /*
@@ -23,14 +27,32 @@ Part 1: Create some style blocks to style the card.
 */
 .card {
     width: 25%;
-    border: dotted hotpink 10px;
+    border: double rgb(150, 235, 157) 10px;
+  transition: all .5s ease-in;
 }
 h2 {
-
+margin: 20px;
 }
 p {
-
+    margin: 20px;
 }
 button {
-    
+    margin: 20px;
+}
+.card img {
+    width: 100%;
+}
+@media screen and (max-width: 450px){
+    .card {
+        width: 90%;
+        border: double rgb(150, 235, 157) 10px;
+      
+    }
+}
+@media screen and (max-width: 800px){
+    .card {
+        width: 60%;
+        border: double rgb(150, 235, 157) 10px;
+      
+    }
 }

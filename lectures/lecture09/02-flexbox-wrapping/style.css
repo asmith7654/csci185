@@ -14,12 +14,27 @@ flex-wrap: 		    (no-wrap, wrap)
 */
 
 
+main, section {
+    border: dotted 2px thistle;
+    margin: 7px;
+}
 
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
+}
+section {
+    width: 25%;
+    padding: 10px;
+}
 
 
 @media only screen and (max-width: 1000px) {
-    /* Your code here */
+    section {
+        width: calc(50%-30px);
+    }
 }
 
 @media only screen and (max-width: 600px) {
