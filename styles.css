@@ -1,21 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@200&family=Orbitron&display=swap');
 body {
-    background: linear-gradient(#0f0c29, #11101a, #24243e);
-    background-size: 300% 300%;
-    animation: sci-fi-bg 20s ease infinite;
+   background-image: url('/images/pexels-nicole-avagliano-2312040.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+  
   }
   
-  @keyframes sci-fi-bg {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+
+  
   
   header h1 {
     color: #fff;
@@ -28,22 +21,25 @@ body {
   }
   
   main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(2, auto);
+   min-width: 33%;
     margin: 50px;
+    padding-left: 10vw;
+    padding-right: 10vw;
     font-family: 'Exo', sans-serif;
-    text-align: center;
+    /* text-align: center; */
     transition: ease 0.7s;
   }
   
   section {
-    width: 30%;
-    background-color: rgba(255, 255, 255, 0.1);
+    
+    background-color: rgba(10, 9, 9, 0.249);
     padding: 20px;
     color: #fff;
-    text-align: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    /* text-align: center; */
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); */
     border-radius: 10px;
     margin: 20px;
     font-family: 'Exo', sans-serif;
@@ -71,11 +67,12 @@ body {
     list-style-type: none;
     margin-top: 10px;
     font-family: 'Exo', sans-serif;
-    text-align: center;
+    /* text-align: center; */
     transition: ease 0.7s;
   }
   footer {
     margin-top: 200px;
+    margin-bottom: 30px;
     color: #fff;
     font-family: 'Exo', sans-serif;
     text-align: center;
@@ -94,3 +91,18 @@ li:hover {
 footer:hover {
     text-shadow: 0px 0px 100px rgb(227, 199, 72);
 }
+
+@media screen and (max-width: 800px) {
+  main {
+    display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: repeat(6, auto);
+   min-width: 33%;
+    margin: 50px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-family: 'Exo', sans-serif;
+    /* text-align: center; */
+    transition: ease 0.7s;
+  }
+} 
