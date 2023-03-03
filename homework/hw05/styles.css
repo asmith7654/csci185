@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Your CSS Code Here! */
+
+nav ul{
+    list-style-type: none;
+   text-align: right;
+}
+
+nav ul li {
+    display: inline;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+header {
+background-color:rgb(156, 61, 78);
+text-align: center;
+}
+
+h1 {
+    font-family: 'Shadows Into Light', cursive;
+color: aliceblue;
+}
+
+h2 {
+    font-family: 'Shadows Into Light', cursive;
+    
+}
+
+#about {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   justify-content: left;
+   padding-top: 5%;
+   padding-bottom: 5%;
+   padding-left: 20%;
+   padding-right: 20%;
+
+
+}
+
+.project-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    padding: 5%;
+    background-color: rgb(233, 228, 228);
+    
+}
+
+#contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    padding: 5%;
+  
+}
+
+.row {
+    grid-column: 1 / 2;
+}
+
+.contact-details {
+grid-column: 1 / 2;
+}
+
+.contact-info {
+grid-column:2 / 3;
+}
+
+.card {
+    
+}
+
+#profile-pic {
+    border-radius: 50%;
+}
+
