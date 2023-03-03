@@ -60,35 +60,82 @@ h2 {
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
     padding: 5%;
+    padding-top: -5%;
     background-color: rgb(233, 228, 228);
     
 }
 
 #contact {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 3%;
+}
+
+.contact-details {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
     padding: 5%;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    
+}
+
+.row.row1 {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    margin: 1px;
+    padding: 1px;
   
 }
 
-.row {
+#message {
+    grid-row: 2 / 3;
+    grid-column: 1 / 5;
+    background-color: rgb(233, 228, 228);
+    margin: 1px;
+    padding: 1px;
+}
+
+#submit {
     grid-column: 1 / 2;
-}
-
-.contact-details {
-grid-column: 1 / 2;
-}
-
-.contact-info {
-grid-column:2 / 3;
-}
-
-.card {
-    
+    grid-row: 3 / 4;
+    margin: 1px;
+    padding: 1px;
 }
 
 #profile-pic {
     border-radius: 50%;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(233, 228, 228);
+    text-align: center;
+    height: 10vh;
+}
+
+@media screen and (max-width: 800px) {
+   
+
+nav ul{
+    list-style-type: none;   
+    text-align: center;}
+
+ .project-holder {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 5%;
+        background-color: rgb(233, 228, 228);}
+
+        .contact-details {
+            display: grid;
+            grid-template-columns: 1fr;
+            padding: 5%;
+        }
+    }
