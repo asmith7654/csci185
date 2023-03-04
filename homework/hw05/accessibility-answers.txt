@@ -1,14 +1,14 @@
 1. What corrections did you have to make?
 
-Your answers here.
+I had to add alt text to the images, add a language attribute, and add labels to the different form controls.
 
 1. Do you think your website is usable if you turn off the CSS? Why or why not?
 
-Your answers here.
+I don't think it would be usable for someone who needs accessibility accomodations. I would imagine you could still use it otherwise though. 
 
 1. Is your site is tabbable? In other words, without the use of the mouse, are all the links and buttons accessible using the tab key?
 
-Your answers here.
+It is!
 
 
 
