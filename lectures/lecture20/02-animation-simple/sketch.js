@@ -16,9 +16,10 @@ async function setup() {
 // works).
 function draw() {
     x += speed;
+    y -= speed;
 
     clear();
-    noFill();
+   
     circle(x, y, width);
     drawGrid(canvasWidth, canvasHeight);
 }

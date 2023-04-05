@@ -7,16 +7,22 @@ function setup() {
     noFill();
     let y =0;
     let z =50;
+    let x1 =100;
+    let x2 =300;
+    let x3 =500;
     while (y <= 10000) {
         fill('red');
-        circle(100, y, z);
+        circle(x1, y, z);
         fill('blue');
-        circle(300, y, z);
+        circle(x2, y, z);
         fill('purple');
-        circle(500, y, z);
+        circle(x3, y, z);
 
         y += 5;
         z += 5;
+        x1 += 5;
+        x2 -= 1;
+        x3 *=  .001;
     }
     // circle(100, 200, 50);
     // circle(100, 250, 50);
