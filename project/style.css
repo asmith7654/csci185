@@ -1,34 +1,41 @@
-/* Set default styles for the body */
+
+  @import url('https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+  font-family: 'Proza Libre', sans-serif;
     margin: 0;
     padding: 0;
-    display: grid;
+    background-image: url(images/polygon.jpg);
+    background-size: cover;
+background-attachment: fixed;
+
   }
   
-  /* Set default styles for the container */
+  
   .container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 200px;
+    padding-left: 100px;
+    column-gap: 130px;
+
   }
   
-  /* Style the header */
+ 
   header {
     text-align: left;
     width: 100%;
     margin-bottom: 40px;
   }
   
-  /* Style the h1 */
+  
   header h1 {
     margin-top: 0;
   }
   
-  /* Style the main content area */
+  
   main {
     display: flex;
     flex-direction: row;
@@ -37,57 +44,43 @@ body {
     width: 100%;
   }
   
-  /* Style the list of topics */
+  
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
     width: 50%;
-    text-align: right;
+    text-align: center;
   }
   
-  /* Style the links in the list */
+ 
   li a {
     display: block;
     padding: 10px;
     text-decoration: none;
     color: #333;
-    border: 1px solid #ccc;
+    border: 2px solid rgb(178, 177, 177);
     border-radius: 4px;
     margin-bottom: 10px;
+    backdrop-filter: blur(3px);
   }
   
-  /* Change the link color when hovered */
+ 
   li a:hover {
     background-color: #f7f7f7;
     color: #000;
   }
   
-  /* Style the h2 and p elements */
-  header h2,
-  header p {
-    margin: 0;
+  
+ 
+  
+  h1 {
+    margin-bottom: 40px;
+    backdrop-filter: blur(3px);
   }
   
-  header h2 {
-    margin-top: 0;
-  }
-  
-  header p {
-    margin-bottom: 20px;
-  }
-  
-  /* Add a new class for the left column */
-  .left-column {
-    width: 50%;
-    box-sizing: border-box;
-    padding-right: 20px;
-  }
-  
-  /* Add a new class for the right column */
-  .right-column {
-    width: 50%;
-    box-sizing: border-box;
-    padding-left: 20px;
-  }
+p {
+  line-height: 29px;
+  backdrop-filter: blur(3px);
+}
   
