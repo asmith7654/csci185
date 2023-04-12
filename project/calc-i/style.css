@@ -1,4 +1,5 @@
 
+ 
   @import url('https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap');
 
   body {
@@ -12,6 +13,28 @@
   
     }
     
+    .topnav {
+      margin-top: 15px;
+      margin-left: 7px;
+      overflow: hidden;
+      }
+      
+      .topnav a {
+      float: left;
+      text-align: left;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      color: black;
+      }
+      
+      .topnav a:hover {
+      background-color: rgb(233, 231, 231);
+      }
+      
+      .topnav a.active {
+      color: rgb(3, 3, 3);
+      }
     
     .container {
       max-width: 800px;
@@ -87,4 +110,4 @@
     line-height: 29px;
     backdrop-filter: blur(3px);
   }
-    
+      
