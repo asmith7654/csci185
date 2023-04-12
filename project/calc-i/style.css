@@ -1,0 +1,90 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap');
+
+  body {
+    font-family: 'Proza Libre', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url(../images/polygon.jpg);
+      background-size: cover;
+  background-attachment: fixed;
+  
+  
+    }
+    
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-rows: 0.2fr 1fr;
+      padding-top: 120px;
+      padding-left: 400px;
+      row-gap: 15px;
+      
+  
+    }
+    
+   
+    header {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 40px;
+      margin-left: -200px;
+    }
+    
+    
+    header h1 {
+      margin-top: 0;
+    }
+    
+    
+    main {
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+    }
+    
+    
+    ul {
+      list-style: none;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      width: 50%;
+      text-align: center;
+    }
+    
+   
+    li a {
+      display: block;
+      background-color: #e7e5e5;
+      padding: 10px;
+      text-decoration: none;
+      color: #333;
+      border: 2px solid rgb(178, 177, 177);
+      border-radius: 4px;
+      margin-bottom: 10px;
+      backdrop-filter: blur(3px);
+    }
+    
+   
+    li a:hover {
+      background-color: #f7f7f7;
+      color: #000;
+    }
+    
+    
+   
+    
+    h1 {
+      margin-bottom: 40px;
+      backdrop-filter: blur(3px);
+    }
+    
+  p {
+    line-height: 29px;
+    backdrop-filter: blur(3px);
+  }
+    
