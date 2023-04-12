@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trigonometric Substitution</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class="topnav">
+		<a class="active" href="../../index.html">Home</a>
+		<a href="../../calc-i/index.html">Calculus I</a>
+		<a href="../index.html">Calculus II</a>
+		<a href="../../discrete/index.html">Discrete Mathematics</a>
+	  </div>
+
+	<header>
+		<h1>Trig Substitution</h1>
+	</header>
+
+	
+
+	<main>
+		
+				<section class="section1">
+			<h2>What is Trig Substitution?</h2>
+			<section class="innersection1">
+			<p class="what">Trig substitution is a technique used in calculus to simplify integrals that involve expressions containing square roots of quadratic expressions or sums and differences of squares. The method involves making a substitution of the form x = a sinθ, x = a tanθ, or x = a secθ, where a is a constant and θ is a variable. </p>
+            <p>This substitution allows the integral to be expressed in terms of trigonometric functions, which can be more easily integrated using standard trigonometric identities. Trig substitution is particularly useful when dealing with integrals that involve the square roots of quadratic expressions. </p>
+		</section>
+		</section>
+		<section class="section2">
+			<h2>How to use Trig Substitution?</h2>
+			<ol class="innersection2">
+				<li>Look for algebraic expressions under a radical sign.</li>
+				<li>Identify the type of substitution required based on the algebraic expression. The three possible types of substitution are:
+
+                    <p> If the expression involves a term of the form a^2 - x^2, substitute x = a sin(theta).</p> 
+                    <p> If the expression involves a term of the form a^2 + x^2, substitute x = a tan(theta).</p>
+                        <p> If the expression involves a term of the form x^2 - a^2, substitute x = a sec(theta).</p></li>
+				<li>Substitute the expression under the radical with the appropriate trigonometric identity.</li>
+				<li>Simplify the integral using trigonometric identities.</li>
+                <li>Solve the integral by substituting back to the original variable.</li>
+                
+			</ol>
+		</section>
+		<section class="section3">
+			<h2>Examples of Trig Substitution</h2>
+			<p class="center">Here are some examples of how to use Trig Substitution:</p>
+			<h3 class="center">Example 1:</h3>
+			<section class="innersection3">
+			<p>Calculate the integral of x*cos(x^2) dx.</p>
+			<ol >
+				<li>Let u = x^2.</li>
+				<li>Calculate du/dx = 2x.</li>
+				<li>Substitute u and du/dx into the integral:</li>
+				<p>Integral of cos(u) (1/2)du.</p>
+				<li>Simplify the integral:</li>
+				<p>(1/2)sin(u) + C, where C is the constant of integration.</p>
+				<li>Replace u with the original expression:</li>
+				<p>(1/2)sin(x^2) + C.</p>
+			</ol>
+		</section>
+			<h3 class="center">Example 2:</h3>
+			<section class="innersection3">
+			<p>Calculate the integral of (x+1)/(x^2+2x+5) dx.</p>
+			<ol>
+				<li>Let u = x^2 + 2x + 5.</li>
+				<li>Let u = x^2 + 2x + 5.</li>
+				
+			</ol>
+		</section>
+		<h3 class="center">More Examples and Resources:</h3>
+			<section class="more-examples">
+			<p>Here are some examples that may be of help: <a href="../index.html">Handwritten examples</a></p>
+            <p>Here is a video that explains the concept in more detail: </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ocgjfF2AboA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+			</main>
+			</body>
+</html>
