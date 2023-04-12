@@ -61,7 +61,7 @@ main {
 }
 
 .section1 {
-	background-color: rgba(244, 249, 250, 0.784);
+	background-color: #e7e5e5b1; 
 	/* backdrop-filter: blur(50px); */
 	border: solid;
 	margin-bottom: 30px;
@@ -74,7 +74,7 @@ main {
 }
 
 .section2 {
-	background-color: rgba(244, 249, 250, 0.784);
+	background-color: #e7e5e5b1; 
 	/* backdrop-filter: blur(50px); */
 	border: solid;
 	margin-bottom: 30px;
@@ -87,7 +87,7 @@ main {
 }
 
 .section3 {
-    background-color: rgba(244, 249, 250, 0.784);
+	background-color: #e7e5e5b1; 
 	/* backdrop-filter: blur(50px); */
 	border: solid;
 	margin-bottom: 30px;

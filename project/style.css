@@ -1,9 +1,8 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
 
   body {
-    font-family: 'Proza Libre', sans-serif;
-      margin: 0;
+    font-family: 'Hind Siliguri', sans-serif;
       padding: 0;
       background-image: url(images/polygon.jpg);
       background-size: cover;
@@ -12,15 +11,45 @@
   
     }
     
+    .topnav {
+      margin-top: 15px;
+      margin-left: 7px;
+      overflow: hidden;
+      }
+      
+      .topnav a {
+      float: left;
+      text-align: left;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      color: black;
+      }
+      
+      .topnav a:hover {
+      background-color: rgb(233, 231, 231);
+      }
+      
+      .topnav a.active {
+      color: rgb(3, 3, 3);
+      }
     
+    .left {
+       background-color: #e7e5e5b1; 
+	/* backdrop-filter: blur(50px); */
+	border: 2px solid rgb(178, 177, 177);
+	padding: 30px;
+	line-height: 25px;
+    }
     .container {
-      max-width: 800px;
+      max-width: 1000px;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      padding-top: 200px;
+      grid-template-columns: 2.5fr 1fr;
+      padding-top: 170px;
       padding-left: 100px;
       column-gap: 130px;
+      
   
     }
     
@@ -64,7 +93,7 @@
       border-radius: 4px;
       margin-bottom: 10px;
       backdrop-filter: blur(3px);
-      background-color: #e7e5e5;
+      background-color: #e6e6e6;
     }
     
    
