@@ -24,24 +24,25 @@
 			<h2>What is u-Substitution?</h2>
 			<section class="innersection1">
 			<p class="what">U-Substitution, also known as the "reverse chain rule," is a technique used in calculus to simplify integrals. It involves substituting a complex expression with a simpler one by using a new variable u.</p>
-			<p class="what">The basic idea is to identify a part of the integrand that looks like the derivative of some simpler expression. We then substitute that expression for u, and rewrite the entire integral in terms of u.</p>
+			<p class="what">The basic idea is to identify a part of the integrand whose derivative is involved in the equation in some way already. We then substitute that expression for u, and rewrite the entire integral in terms of u.</p>
 		</section>
 		</section>
 		<section class="section2">
 			<h2>How to use u-Substitution</h2>
 			<ol class="innersection2">
-				<li>Identify a part of the integrand that looks like the derivative of some simpler expression.</li>
-				<li>Let u be that simpler expression.</li>
-				<li>Calculate du/dx (the derivative of u with respect to x).</li>
-				<li>Substitute u and du/dx into the integral.</li>
-				<li>Simplify the integral by replacing all occurrences of x and dx with u and du, respectively.</li>
-				<li>Integrate the new expression in terms of u.</li>
-				<li>Finally, replace u with the original expression you substituted to get the final answer.</li>
+				<li>Identify a part of the integrand to substitute. It should be something whose derivative is already involved in the equation in some way.
+					<p>Side note: As a rule of thumb, the inner-most part of the integrand is what should be substituted. Operations that are considered inner-most include parentheses, roots, and divisors. This is a general guideline, not a rule.</p></li>
+				<li>Let u be that simpler expression. For example, lets say we are trying to integrate x/1+x^2. Let u = 1+x^2.</li>
+				<li>Differentiate both sides of your u variable. For example, if your u = 1+x^2, du = 2xdx.</li>
+				<li>Solve for dx and substitute your equivalent du expression in for dx in the original equation. In the example above, solving for dx we find dx = du/2. Replace your dx in the equation with du/2. </li>
+				<li>Substitute in your u into the original equation.</li>
+				<li>Your equation should now be integratable form. Integrate using known techniques.</li>
+				<li>After you have integrated, replace your u with its original expression. This is your final answer.</li>
 			</ol>
 		</section>
 		<section class="section3">
-			<h2>Examples of u-Substitution</h2>
-			<p class="center">Here are some examples of how to use u-Substitution:</p>
+			<h2>Examples and Resources</h2>
+			<!-- <p class="center">Here are some examples of how to use u-Substitution:</p>
 			<h3 class="center">Example 1:</h3>
 			<section class="innersection3">
 			<p>Calculate the integral of x*cos(x^2) dx.</p>
@@ -65,9 +66,9 @@
 				
 			</ol>
 		</section>
-		<h3 class="center">More Examples and Resources:</h3>
+		<h3 class="center">More Examples and Resources:</h3> -->
 			<section class="more-examples">
-			<p>Here are some examples that may be of help: <a href="../index.html">Handwritten examples</a></p>
+			<p>Here are some examples that may be of help: <a href="../index.html">Handwritten examples with explanations</a></p>
             <p>Here is a video that explains the concept in more detail: </p>
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/sdYdnpYn-1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 		        </section>

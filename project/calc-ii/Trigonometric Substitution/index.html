@@ -36,42 +36,18 @@
 
                     <p> If the expression involves a term of the form a^2 - x^2, substitute x = a sin(theta).</p> 
                     <p> If the expression involves a term of the form a^2 + x^2, substitute x = a tan(theta).</p>
-                        <p> If the expression involves a term of the form x^2 - a^2, substitute x = a sec(theta).</p></li>
+                        <p> If the expression involves a term of the form x^2 - a^2, substitute x = a sec(theta).</p>
+					Do not forget to differentiate your substitution so you can replace your dx with the appropriate expression. For example, if your x = 1tan(theta), dx = 1sec^2(theta)d(theta). </li>
 				<li>Substitute the expression under the radical with the appropriate trigonometric identity.</li>
-				<li>Simplify the integral using trigonometric identities.</li>
-                <li>Solve the integral by substituting back to the original variable.</li>
+				<li>Simplify the integral using trigonometric identities until it is integratable. Integrate.</li>
+                <li>Solve the integral by substituting back to the original variable, x. If your original substitution was x = 1tan(theta), create a triangle by solving for tan(theta). Tan(theta) = x/1, so the opposite side of the triangle is x, the adjacent is 1, and the hypotenuse is (x^2+1)^1/2. Using these sides, you can replace trig functions involving theta back to x's. If you have a theta that is not attached to a trig function, solve for theta directly. If x/1 = tan(theta), arctan(x/1) = theta. You can now replace your theta back to the original variable.</li>
                 
 			</ol>
 		</section>
 		<section class="section3">
-			<h2>Examples of Trig Substitution</h2>
-			<p class="center">Here are some examples of how to use Trig Substitution:</p>
-			<h3 class="center">Example 1:</h3>
-			<section class="innersection3">
-			<p>Calculate the integral of x*cos(x^2) dx.</p>
-			<ol >
-				<li>Let u = x^2.</li>
-				<li>Calculate du/dx = 2x.</li>
-				<li>Substitute u and du/dx into the integral:</li>
-				<p>Integral of cos(u) (1/2)du.</p>
-				<li>Simplify the integral:</li>
-				<p>(1/2)sin(u) + C, where C is the constant of integration.</p>
-				<li>Replace u with the original expression:</li>
-				<p>(1/2)sin(x^2) + C.</p>
-			</ol>
-		</section>
-			<h3 class="center">Example 2:</h3>
-			<section class="innersection3">
-			<p>Calculate the integral of (x+1)/(x^2+2x+5) dx.</p>
-			<ol>
-				<li>Let u = x^2 + 2x + 5.</li>
-				<li>Let u = x^2 + 2x + 5.</li>
-				
-			</ol>
-		</section>
-		<h3 class="center">More Examples and Resources:</h3>
+			<h2>Examples and Resources</h2>
 			<section class="more-examples">
-			<p>Here are some examples that may be of help: <a href="../index.html">Handwritten examples</a></p>
+			<p>Here are some examples that may be of help: <a href="../index.html">Handwritten examples with explanations</a></p>
             <p>Here is a video that explains the concept in more detail: </p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/ocgjfF2AboA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </section>

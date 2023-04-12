@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Integration by Parts</title>
+	<title>Integration by Parts (Tabular Method)</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
 	  </div>
 
 	<header>
-		<h1>Integration by Parts</h1>
+		<h1>Integration by Parts (Tabular Method)</h1>
 	</header>
 
 	
@@ -22,31 +22,33 @@
 	<main>
 		
 				<section class="section1">
-			<h2>What is Integration by Parts?</h2>
+			<h2>What is Integration by Parts (Tabular Method)?</h2>
 			<section class="innersection1">
-			<p class="what">Trig substitution is a technique used in calculus to simplify integrals that involve expressions containing square roots of quadratic expressions or sums and differences of squares. The method involves making a substitution of the form x = a sinθ, x = a tanθ, or x = a secθ, where a is a constant and θ is a variable. </p>
-            <p>This substitution allows the integral to be expressed in terms of trigonometric functions, which can be more easily integrated using standard trigonometric identities. Trig substitution is particularly useful when dealing with integrals that involve the square roots of quadratic expressions. </p>
+			<p class="what">Integration by parts is a technique used to evaluate the integral of a product of two functions, u(x) and v(x). The basic idea behind the tabular method is to create a table of values for u(x), v(x), and their integrals/derivatives that can be used to simplify the integration process. </p>
 		</section>
 		</section>
 		<section class="section2">
-			<h2>How to use Integration by Parts</h2>
+			<h2>How to use Integration by Parts (Tabular Method)</h2>
 			<ol class="innersection2">
-				<li>Look for algebraic expressions under a radical sign.</li>
-				<li>Identify the type of substitution required based on the algebraic expression. The three possible types of substitution are:
-
-                    <p> If the expression involves a term of the form a^2 - x^2, substitute x = a sin(theta).</p> 
-                    <p> If the expression involves a term of the form a^2 + x^2, substitute x = a tan(theta).</p>
-                        <p> If the expression involves a term of the form x^2 - a^2, substitute x = a sec(theta).</p></li>
-				<li>Substitute the expression under the radical with the appropriate trigonometric identity.</li>
-				<li>Simplify the integral using trigonometric identities.</li>
-                <li>Solve the integral by substituting back to the original variable.</li>
+				<li>Look for a product of two functions in the integrand (be mindful that divison/fractions can oftentimes be rewritten in terms of multiplication).</li>
+				<li>Create a table with three columns: a sign column, a derivative column, and an integral column. </li>
+				<li>In the sign column, input alternating signs down the column starting with a positive sign in the head of the column.</li>
+				<li>Assign each function to either the derivative column or the integral column. Aim to put easily differentiable functions in the derivative column, and easily integratable functions in the integral column.</li>
+				<li>Start filling out the table. There are three conditions that can be met to stop filling out the table:
+					<p>One of the rows contains a zero.</p>
+					<p>You can find the integral of the product of the row.</p>
+					<p>The product of the row is a multiple of the original equation.</p>
+				</li>
+				<li>If one of the rows contain a zero, add the diagonal products of all the rows. That is your final answer.</li>
+                <li>If you can find the integral of the product of the last row, add the diagonal products of all the prior rows, and integrate the product of the last row. Afterwards, add that integral to your current summation. That is your final answer.</li>
+				<li>If the product of the last row is a multiple of the original equation, add the diagonal products of all the prior rows, and include the integral of the last row at the end. Set your summation equal to the original equation you're integrating, and add or subtract your multiple to the original equation accordingly. Finally, you must return the integral to its original form, so multiply by the reciprocal of the integrals coefficient on both sides of the equation. That is your final answer.</li>
                 
 			</ol>
 		</section>
 		<section class="section3">
-			<h2>Examples of Integration by Parts</h2>
-			<p class="center">Here are some examples of how to use Trig Substitution:</p>
-			<h3 class="center">Example 1:</h3>
+			<h2>Examples and Resources</h2>
+			<!-- <p class="center">Here are some examples of how to use Trig Substitution:</p> -->
+			<!-- <h3 class="center">Example 1:</h3>
 			<section class="innersection3">
 			<p>Calculate the integral of x*cos(x^2) dx.</p>
 			<ol >
@@ -68,13 +70,13 @@
 				<li>Let u = x^2 + 2x + 5.</li>
 				
 			</ol>
-		</section>
-		<h3 class="center">More Examples and Resources:</h3>
+		</section> -->
+		<!-- <h3 class="center">Examples and Resources:</h3> -->
 			<section class="more-examples">
-			<p>Here are some examples that may be of help: <a href="../index.html">Handwritten examples</a></p>
+			<p>Here are some examples that may be of help: <a href="../index.html">Handwritten examples with explanations</a></p>
             <p>Here is a video that explains the concept in more detail: </p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ocgjfF2AboA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </section>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/Yyic5aaXGaw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</section>
 			</main>
 			</body>
 </html>
