@@ -29,20 +29,30 @@
 		</section>
 		</section>
 		<section class="section2">
+			<h2>General form of a series</h2>
+			<section class="innersection4">
+<p>
+	Here's a video explaining sigma notation, the notation used for series (or any summation). In the video, the instructor calls the expression used to generate the terms the "rule", but you will often see it denoted as a<sub>n</sub>. 
+</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/st-6vZESf8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</section>
+		</section>
+		<section class="section2">
 			<h2>Infinite divisions of a square</h2>
 			<section class="innersection2">
 			<p>An interesting application of series is the infinite division of a square. Imagine you have a 1 x 1 square. Divide that square in half. The area of one of those two sections is 1/2. Now divide one of those halves in half (the square now consists of a 1/2 area square, and two 1/4 area squares). The area still adds up to 1 for the total square. But what if we continue doing this infinite amount of times? If the process of splitting up the square never stops, does the area ever reach 1?</p>
 			<p>Before we answer the question of what the true area is, we must establish the process for evaluating series. We can evaluate a series by taking the nth partial sum, and evaluating as n approaches infinity. This process is very similar to what we did for improper integrals.</p> 
-			<p>The nth partial sum is the summation of the series, ending with the expression used to generate the terms to the nth value. N can equal any value, but to find the sum of a series, we will need n to approach infinity.
+			<p>The nth partial sum, or s<sub>n</sub>, is the summation of a series, ending with the expression used to generate the terms to the nth value. N can equal any value, but to find the sum of a series, we will need n to approach infinity.
 			Side note: Some questions may ask you to evaluate a partial sum to some constant (n = constant). All that this means is you must add n terms of the series together to get the desired result.</p>
 			<p>Now that we know what the nth partial sum is and how to evaluate series, lets apply our knowledge to the original question. Our nth partial sum for the infinite division of a 1 x 1 square looks something like 1/2 + 1/4 + 1/8 + 1/16 ... + 1/2^n-1 + 1/2^n. The series ends with 1/2^n because each term is one higher degree of 2 as you progress, and we are taking the nth partial sum. </p>
-			<p>Through a bit of algebra, we can simplify this series. First, multiply both sides by 2. It should now look like 2 * nth partial sum = 2/2 + 2/4 + 2/8 + 2/16 ... 2/2^n. Notice that 2/2^n = 2/2^(n-1)*2 = 1/2^(n-1), and all of the terms beforehand simplify to 1 + 1/2 + 1/4 + 1/8 ... Now, we can rewrite our equation like so: 2 * nth partial sum = 1 + nth partial sum - 1/2^n. Subtract the nth partial sum from both sides and your new equation is nth partial sum = 1 - 1/2^n. To evaluate the series, we must take the limit as n approaches infinity of the nth partial sum. The limit as n approaches infinity of 1 - 1/2^n is 1 - 0 or 1. We have now proven that the summation of an infinite amount of divisions of a 1 x 1 square is equal to 1!</p>
+			<p>Through a bit of algebra, we can simplify this series. First, multiply both sides by 2. It should now look like 2 * s<sub>n</sub> = 2/2 + 2/4 + 2/8 + 2/16 ... 2/2^n. Notice that 2/2^n = 2/2^(n-1)*2 = 1/2^(n-1), and all of the terms beforehand simplify to 1 + 1/2 + 1/4 + 1/8 ... Now, we can rewrite our equation like so: 2 * s<sub>n</sub> = 1 + s<sub>n</sub> - 1/2^n. Subtract the s<sub>n</sub> from both sides and your new equation is s<sub>n</sub> = 1 - 1/2^n. To evaluate the series, we must take the limit as n approaches infinity of the s<sub>n</sub>. The limit as n approaches infinity of 1 - 1/2^n is 1 - 0 or 1. We have now proven that the summation of an infinite amount of divisions of a 1 x 1 square is equal to 1!</p>
 		</section>
 		</section>
 		<section class="section3">
 			<h2>Notes</h2>
 			<section class="more-examples">
-			<p>Here is a handwritten version of the proof above, as well as some partial sums practice problems worked out: <a href="../index.html">Handwritten examples with explanations</a></p>
+			<p>Here is a handwritten version of the proof above, as well as some partial sums practice problems worked out: <a href="../index.html">Handwritten examples with explanations</a>. </p>
+			<p>Also, a definition worth knowing is that a <sub>n</sub> = s <sub>n</sub> - s <sub>n-1</sub>.</p>
 		</section>
 			</main>
 			</body>

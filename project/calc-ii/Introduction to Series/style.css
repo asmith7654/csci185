@@ -93,11 +93,19 @@ main {
 	margin-bottom: 30px;
 }
 
+
+
 .innersection3 {
 	margin-left: 130px;
 	margin-right: 130px;
 	line-height: 30px;
 	
+}
+
+.innersection4 {
+	margin-left: 45px;
+	margin-right: 45px;
+	text-align: center;
 }
 
 .more-examples {
