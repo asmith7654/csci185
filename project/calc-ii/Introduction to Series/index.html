@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Partial Fraction Decomposition</title>
+	<title>Introduction to Series</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
 	  </div>
 
 	<header>
-		<h1>Partial Fraction Decomposition</h1>
+		<h1>Introduction to Series</h1>
 	</header>
 
 	
@@ -22,29 +22,27 @@
 	<main>
 		
 				<section class="section1">
-			<h2>What is Partial Fraction Decomposition?</h2>
+			<h2>What is a Series?</h2>
 			<section class="innersection1">
-			<p class="what">Partial fraction decomposition is a technique used in calculus to decompose a rational function (a fraction with polynomials in the numerator and denominator) into simpler fractions. This technique is particularly useful when integrating rational functions or solving equations involving them.</p>
-			<p>The partial fraction decomposition process involves expressing the rational function as a sum of simpler fractions with denominators that are irreducible (cannot be factored further).</p>
+			<p class="what">In math, a series is a concept that involves adding up an infinite number of terms. A series is usually denoted by the symbol Σ (sigma) followed by an expression that defines the terms of the series.</p>
+			<p>There are many different types of series, and they can be classified based on their convergence or divergence properties. Some series converge to a finite limit, while others diverge to infinity or oscillate between positive and negative values. Series are an important tool in calculus and are used to represent functions, approximate values, and solve equations, among other things.</p>
 		</section>
 		</section>
 		<section class="section2">
-			<h2>How to use Partial Fraction Decomposition</h2>
-			<ol class="innersection2">
-				<li>Look for an integrand involving a rational function (polynomial over a polynomial). It must have a higher degree in the denominator, and the denominator must be factorable. If the numerator is a higher degree than the denominator, perform long division to account.</li>
-				<li>Factor the denominator.</li>
-				<li>Set the equation equal to a number of fractions being added together. The number of fractions should be the same as the number of factors in the original equation's denominator. In the denominator of each fraction, input one of the factors from your original equation. In the numerator of each, input a variable of one degree less than the factor. For example, if your factor is x+1, your variable should be a constant A. If your factor is x^2+1, your variable should be Ax+b. </li>
-				<p>Side note: If you have two factors that are the same, there is a special step you must follow. Your first fraction should be your factor to the first degree. Your second fraction should be your factor to the second degree. Although it is to the second degree, your variable in the numerator should still be to the first degree. For example, if your fraction is 1/(x+1)(x+1), or 1/(x+1)^2, your first fraction should be A/(x+1). Your second fraction should be B/(x+1)^2. If you have three of the same factors, follow the same steps, just include one more fraction that has a denominator to the third degree.</p></li> 
-				<li>Multiply both sides by the LCD (the denominator from your original equation).</li>
-				<li>Solve for your variables. To do so, set x equal to whatever values will allow you to solve. Aim to use values that will zero out certain terms. For example, if you have A(x+1) + B(x+2), setting x equal to -1 will zero out A and make it easy to solve for B. For more complex problems, you may need to set up a system of equations.</li>
-				<li>Once you have your variables solved, plug them into your original fractions. Now use your fractions to solve the problem. If performed correctly, it should now be in integratable form.
+			<h2>Infinite divisions of a square</h2>
+			<section class="innersection2">
+			<p>An interesting application of series is the infinite division of a square. Imagine you have a 1 x 1 square. Divide that square in half. The area of one of those two sections is 1/2. Now divide one of those halves in half (the square now consists of a 1/2 area square, and two 1/4 area squares). The area still adds up to 1 for the total square. But what if we continue doing this infinite amount of times? If the process of splitting up the square never stops, does the area ever reach 1?</p>
+			<p>Before we answer the question of what the true area is, we must establish the process for evaluating series. We can evaluate a series by taking the nth partial sum, and evaluating as n approaches infinity. This process is very similar to what we did for improper integrals.</p> 
+			<p>The nth partial sum is the summation of the series, ending with the expression used to generate the terms to the nth value. N can equal any value, but to find the sum of a series, we will need n to approach infinity.
+			Side note: Some questions may ask you to evaluate a partial sum to some constant (n = constant). All that this means is you must add n terms of the series together to get the desired result.</p>
+			<p>Now that we know what the nth partial sum is and how to evaluate series, lets apply our knowledge to the original question. Our nth partial sum for the infinite division of a 1 x 1 square looks something like 1/2 + 1/4 + 1/8 + 1/16 ... + 1/2^n-1 + 1/2^n. The series ends with 1/2^n because each term is one higher degree of 2 as you progress, and we are taking the nth partial sum. </p>
+			<p>Through a bit of algebra, we can simplify this series. First, multiply both sides by 2. It should now look like 2 * nth partial sum = 2/2 + 2/4 + 2/8 + 2/16 ... 2/2^n. Notice that 2/2^n = 2/2^(n-1)*2 = 1/2^(n-1), and all of the terms beforehand simplify to 1 + 1/2 + 1/4 + 1/8 ... Now, we can rewrite our equation like so: 2 * nth partial sum = 1 + nth partial sum - 1/2^n. Subtract the nth partial sum from both sides and your new equation is nth partial sum = 1 - 1/2^n. To evaluate the series, we must take the limit as n approaches infinity of the nth partial sum. The limit as n approaches infinity of 1 - 1/2^n is 1 - 0 or 1. We have now proven that the summation of an infinite amount of divisions of a 1 x 1 square is equal to 1!</p>
+		</section>
 		</section>
 		<section class="section3">
-			<h2>Examples and Resources</h2>
+			<h2>Notes</h2>
 			<section class="more-examples">
-			<p>Here are some examples that may be of help: <a href="../index.html">Handwritten examples with explanations</a></p>
-            <p>Here is a video that explains the concept in more detail: </p>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/QKkdYW77xNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			<p>Here is a handwritten version of the proof above, as well as some partial sums practice problems worked out: <a href="../index.html">Handwritten examples with explanations</a></p>
 		</section>
 			</main>
 			</body>
