@@ -1,10 +1,10 @@
 
- 
-  @import url('https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+
 
   body {
-    font-family: 'Proza Libre', sans-serif;
-      margin: 0;
+    font-family: 'Hind Siliguri', sans-serif;
+    margin: 0;
       padding: 0;
       background-image: url(../images/polygon.jpg);
       background-size: cover;
