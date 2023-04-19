@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Partial Fraction Decomposition</title>
+	<title>P Series</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
 	  </div>
 
 	<header>
-		<h1>Partial Fraction Decomposition</h1>
+		<h1>P-Series</h1>
 	</header>
 
 	
@@ -22,30 +22,24 @@
 	<main>
 		
 				<section class="section1">
-			<h2>What is Partial Fraction Decomposition?</h2>
+			<h2>What is a P-Series?</h2>
 			<section class="innersection1">
-			<p class="what">Partial fraction decomposition is a technique used in calculus to decompose a rational function (a fraction with polynomials in the numerator and denominator) into simpler fractions. This technique is particularly useful when integrating rational functions or solving equations involving them.</p>
-			<p>The partial fraction decomposition process involves expressing the rational function as a sum of simpler fractions with denominators that are irreducible (cannot be factored further).</p>
+			<p class="what">In calculus, the p-series is a type of infinite series of the form:</p>
+
+			<p>	Σ <sub>n=1</sub> <sup>&infin;</sup>1/n^p </p>
+				
+			<p>	where p is a constant greater than 0. The p-series is an important example in the study of infinite series, because its convergence behavior depends on the value of p.
+				If p is greater than 1, the p-series converges, which means that the sum of its terms approaches a finite value as the number of terms increases. If p is less than or equal to 1, the p-series diverges, which means that the sum of its terms does not approach a finite value as the number of terms increases.</p>
 		</section>
 		</section>
-		<section class="section2">
-			<h2>How to use Partial Fraction Decomposition</h2>
-			<ol class="innersection2">
-				<li>Look for an integrand involving a rational function (polynomial over a polynomial). It must have a higher degree in the denominator, and the denominator must be factorable. If the numerator is a higher degree than the denominator, perform long division to account.</li>
-				<li>Factor the denominator.</li>
-				<li>Set the equation equal to a number of fractions being added together. The number of fractions should be the same as the number of factors in the original equation's denominator. In the denominator of each fraction, input one of the factors from your original equation. In the numerator of each, input a variable of one degree less than the factor. For example, if your factor is x+1, your variable should be a constant A. If your factor is x^2+1, your variable should be Ax+b. </li>
-				<p>Side note: If you have two factors that are the same, there is a special step you must follow. Your first fraction should be your factor to the first degree. Your second fraction should be your factor to the second degree. Although it is to the second degree, your variable in the numerator should still be to the first degree. For example, if your fraction is 1/(x+1)(x+1), or 1/(x+1)^2, your first fraction should be A/(x+1). Your second fraction should be B/(x+1)^2. If you have three of the same factors, follow the same steps, just include one more fraction that has a denominator to the third degree.</p></li> 
-				<li>Multiply both sides by the LCD (the denominator from your original equation).</li>
-				<li>Solve for your variables. To do so, set x equal to whatever values will allow you to solve. Aim to use values that will zero out certain terms. For example, if you have A(x+1) + B(x+2), setting x equal to -1 will zero out A and make it easy to solve for B. For more complex problems, you may need to set up a system of equations.</li>
-				<li>Once you have your variables solved, plug them into your original fractions. Now use your fractions to solve the problem. If performed correctly, it should now be in integratable form.
 		</section>
 		<section class="section3">
 			<h2>Examples and Resources</h2>
 			<section class="more-examples">
 			<p>Here are some examples that may be of help: <a href="../index.html">Handwritten examples with explanations</a></p>
             <p>Here is a video that explains the concept in more detail: </p>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/QKkdYW77xNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/x621rtIwb_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                </section>
 		</section>
-			</main>
+		</main>
 			</body>
 </html>
