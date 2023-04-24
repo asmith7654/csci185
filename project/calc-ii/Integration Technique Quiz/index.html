@@ -1,3 +1,40 @@
-<div id="quiz"></div>
-<button id="submit">Get Results</button>
-<div id="results"></div>
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="main.js" defer></script>
+	<title>Quiz</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class="topnav">
+		<a class="active" href="../../index.html">Home</a>
+		<a href="../../calc-i/index.html">Calculus I</a>
+		<a href="../index.html">Calculus II</a>
+		<a href="../../discrete/index.html">Discrete Mathematics</a>
+	  </div>
+
+	<header>
+		<h1>Integration Techniques Quiz</h1>
+	</header>
+
+	
+
+	<main>
+		<section class="section1">
+		<h2 class="current-question">
+            
+        </h2>
+       
+        <textarea class="input" name="" id="input" cols="30" rows="10"></textarea>
+		
+        <br>
+	</section>
+	<section class="section2">
+        <button onclick="previous()">Previous</button>
+        <button onclick="checkAnswer()">Submit</button>
+        <button onclick="next()">Next</button>
+	</section>
+    </main>
+ </body>
+</html>
