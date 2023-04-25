@@ -1,3 +1,6 @@
+//fix next function so if you spam next past the max it still responds to previous
+//fix mathjax so it applies to every question
+
 const questions = [
     {
         question:"$$∫ \\frac{x}{x^2+7}dx$$",
